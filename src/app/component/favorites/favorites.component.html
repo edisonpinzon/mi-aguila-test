@@ -1,0 +1,19 @@
+
+
+<div class="modal-content">
+<div class="modal-header">
+     <p class="heading lead">favorites</p>
+   </div>
+   <!-- Modal body -->
+   <div class="modal-body">
+    <ul>
+      <li *ngFor="let item of favorites.point">
+           <button type="button" class="btn btn-light btn-block" (click)="selectItem(item)" name="button">{{item.name}} -- {{item.address}}</button>
+      </li>
+    </ul>
+   </div>
+   <!-- Modal footer -->
+   <div class="modal-footer  justify-content-center">
+       <button type="button" class="btn btn-primary"  (click)="onNoClick()">Cerrar</button>
+   </div>
+</div>
